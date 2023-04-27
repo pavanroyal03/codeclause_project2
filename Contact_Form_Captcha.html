@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>CodeClause_Project-2</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="Contact_Style.css">
+</head>
+
+<body>
+    <fieldset>
+    <div class="center">
+            <form>
+                <h1>!! Contact form with Captcha !!</h1>
+                <br/><br/><br/>
+                <h3>
+                Firstname * <input type="text" name="Name" placeholder="First name" required="required">
+                Lastname * <input type="text" name="Surname" placeholder="Last name" required="required"/>
+                <br/><br/><br/>
+                Email * <input id="form_email" type="email" name="email" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                Phone <input type="tel" name="phone" placeholder="Please enter your phone">
+                <br/><br/><br/>
+                WhatsApp Number <input type="tel" name="phone" placeholder="Please enter your Whatsapp no.">
+                <br/><br/><br/>
+                Message <textarea> </textarea>
+                <br/><br/>
+                </h3>
+            
+        <div id="captchaBackground">
+            <canvas id="captcha">captcha text</canvas>
+            <input id="textBox" type="text" name="text">
+            <div id="buttons">
+                <input id="submitButton" type="submit">
+                <button id="refreshButton" type="submit">Refresh</button>
+            </div>
+            <span id="output"></span>
+        </div>
+    </div>
+    </fieldset> 
+    <script src="Contact_script.js"></script>
+</body>
+
+</html>
